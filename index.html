@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- JS dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap 4 dependency -->
+    <script src="https://unpkg.com/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- bootbox code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+    <script src="https://github.com/makeusabrew/bootbox/releases/download/v5.5.2/bootbox.locales.min.js"></script>
+
+    <link rel="stylesheet" href="lib/style.css">
+    <script type="module">
+
+        import {agregar} from './lib/index.js';
+        import {insertar_al_final} from './lib/index.js';
+        import {insertar_antes_X} from './lib/index.js';
+        import {insertar_despues_X} from './lib/index.js';
+        import {elimina_inicio} from './lib/index.js';
+        import {elimina_final} from './lib/index.js';
+        import {elimina_X} from './lib/index.js';
+        import {elimina_antes_X} from './lib/index.js';
+        import {elimina_despues_X} from './lib/index.js';
+      
+        window.agregar=agregar;
+        window.insertar_al_final=insertar_al_final;
+        window.insertar_antes_X=insertar_antes_X;
+        window.insertar_despues_X=insertar_despues_X;
+        window.elimina_inicio=elimina_inicio;
+        window.elimina_final=elimina_final;
+        window.elimina_X=elimina_X;
+        window.elimina_antes_X=elimina_antes_X;
+        window.elimina_despues_X=elimina_despues_X;
+
+    </script>
+
+</head>
+
+<body>
+    
+<canvas id="tutorial" width="1450" height="150"></canvas>
+<div id="salida"></div>
+    <button onclick="agregar()">insertar al inicio</button>
+    <button onclick="insertar_al_final()">insertar al final</button>
+    <button onclick="insertar_antes_X()">insertar antes X </button>
+    <button onclick="insertar_despues_X()">insertar despues de X</button>
+    <button onclick="elimina_inicio()">eliminar inicio</button>
+    <button onclick="elimina_final()">eliminar final</button>
+    <button onclick="elimina_X()">eliminar elemento X</button>
+    <button onclick="elimina_antes_X()">eliminar elemento antes de X</button>
+    <button onclick="elimina_despues_X()">eliminar elemento despues de X</button>
+</body>
+
+</html>
